@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Gallery</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <style>
+    #load{
+      background: #ecf0f1 url(/NCC/assets/giphy.gif) no-repeat center center;
+                height: 100vh;
+                width: 100%;
+                position: fixed;
+                z-index: 100;
+    }
+    </style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700iRaleway:300,300i,400,400i,500,500i,600,600i,700,700iPoppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css "/>
+  
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="index.html" rel="index">
+
+</head>
+
+<body>
+  <div id="load"></div>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+    
+      
+    </div>
+  </section>
+
+  <div class="color">
+    <div class="header" style="background: #111; color: #fff; border-radius: 0 0 24px 24px; box-shadow: 0 4px 24px rgba(44,62,80,0.10); padding: 24px 0 18px 0; margin-bottom: 0;">
+      <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between flex-wrap" style="gap: 16px;">
+          <a href="https://dbatu.ac.in/" class="d-block" style="flex:0 0 110px;">
+            <img src="assets/img/BATU_logo.png" alt="DBATU Logo" style="height:90px; width:auto; border-radius:14px; box-shadow:0 2px 8px #2222; background:#fff; padding:4px;">
+          </a>
+          <div class="flex-grow-1 text-center">
+            <div style="font-size:2.1rem; font-weight:800; color:#fff; letter-spacing:1px; line-height:1.1;">Dr. Babasaheb Ambedkar Technological University, Lonere</div>
+            <div style="font-size:1.3rem; color:#ffe066; font-weight:600; margin-top:2px;">डॉ. बाबासाहेब आंबेडकर तंत्रशास्त्र विद्यापीठ, लोणेरे</div>
+            <div style="font-size:1.05rem; color:#e0e0e0; margin-top:2px;">Tal.: Mangoan, Dist.: Raigad, Maharashtra, India - 402103</div>
+            <div style="font-size:2.2rem; color:#fff; font-weight:900; margin-top:10px; letter-spacing:1.5px; text-shadow:0 2px 8px #2222;">DBATU NCC UNIT</div>
+            <div style="font-size:1.25rem; color:#ffe066; font-weight:700;">6 MAH BN MUMBAI GRP 'A'</div>
+          </div>
+          <a href="https://indiancc.nic.in/" class="d-block" style="flex:0 0 110px;">
+            <img src="assets/img/logo.png" alt="NCC Logo" style="height:90px; width:auto; border-radius:14px; box-shadow:0 2px 8px #2222; background:#fff; padding:4px;">
+          </a>
+        </div>
+      </div>
+      <hr style="border:0; border-top:2.5px solid #fff; opacity:0.25; margin:18px 0 0 0;">
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">HOME</a></li>
+          <li class="dropdown"><a href="#"><span>ABOUT</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                
+                  <li><a href="https://indiancc.nic.in/aim-of-ncc/" target="_blank">AIM</a></li>
+                  <li><a href="https://indiancc.nic.in/motto-of-ncc/" target="_blank">MOTTO</a></li>
+                  <li><a href="https://indiancc.nic.in/pledge/" target="_blank">PLEDGE</a></li>
+                  <li><a href="https://indiancc.nic.in/ncc-song-lyrics/" target="_blank">NCC SONG</a></li>
+                  <li><a href="https://indiancc.nic.in/document-category/ncc-act/" target="_blank">NCC ACT</a></li>
+                  <li><a href="https://indiancc.nic.in/document-category/ncc-rules/" target="_blank">NCC RULES</a></li>
+                 </ul>
+            
+          </li>
+          <li class="dropdown"><a href=""><span>CADET</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                
+                  <li><a href="https://indiancc.nic.in/cadets-commandments/" target="_blank">Cadet's Commandments</a></li>
+                  <li><a href="https://indiancc.nic.in/training-activities/" target="_blank">Training Syllabus </a></li>
+                  <li><a href="assets/document/handbook.pdf" target="_blank">Cadets' Handbook</a></li>
+                  <li><a href="https://nccauto.gov.in/enrolment" target="_blank">Cadet Enrollment form SD/SW</a></li>
+                  <li><a href="https://indiancc.nic.in/document-category/ncc-rules/" target="_blank">Cadet Schlorship</a></li>
+                  <li><a href="https://joinindianarmy.nic.in/writereaddata/Portal/NotificationPDF/NCC_50.pdf" target="_blank">Special Entry Scheme Arm</a></li>
+                  
+                </ul>
+          
+          <li><a class="nav-link scrollto" href="#about">ANO</a></li>
+          
+         
+          <li><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
+          <li><a class="nav-link scrollto" href="https://nccauto.gov.in/alumni">ALUMNI</a></li>
+          <li class="dropdown">
+              <a href="#"><span>APPLICATIONS</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                  <li><a href="track-application.php">Track Your Application</a></li>
+                  <li><a href="applications.php">View All Applications</a></li>
+              </ul>
+          </li>
+          <li><a class="getstarted scrollto active" href="Portfolio-details.html">GALLERY</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Gallery </h2>
+        </div>
+
+        
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-title">
+       </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-cmvisit">CM Visit</li>
+            <li data-filter=".filter-yogaday">Yoga Day</li>
+            <li data-filter=".filter-convocation">Convocation</li>
+            <li data-filter=".filter-mockdrill">Mock Drill</li>
+            <li data-filter=".filter-independence">Independence Day</li>
+            <li data-filter=".filter-vcceremony">VC Ceremony</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- All Events Section -->
+      <!-- Removed the All Events section as per user request -->
+
+      <div class="row portfolio-container">
+
+        <!-- CM Visi Images -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-cmvisit">
+          <div class="portfolio-wrap">
+            <img src="assets/img/CM Visi/IMG_6516.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>CM Visit</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/CM Visi/IMG_6516.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CM Visit"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-cmvisit">
+          <div class="portfolio-wrap">
+            <img src="assets/img/CM Visi/IMG_6521.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>CM Visit</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/CM Visi/IMG_6521.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CM Visit"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-cmvisit">
+          <div class="portfolio-wrap">
+            <img src="assets/img/CM Visi/IMG_6555.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>CM Visit</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/CM Visi/IMG_6555.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CM Visit"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-cmvisit">
+          <div class="portfolio-wrap">
+            <img src="assets/img/CM Visi/IMG_6594.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>CM Visit</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/CM Visi/IMG_6594.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CM Visit"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-cmvisit">
+          <div class="portfolio-wrap">
+            <img src="assets/img/CM Visi/IMG_6597.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>CM Visit</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/CM Visi/IMG_6597.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CM Visit"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Convocation Ceremony 25 Images -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-convocation">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Convocation Ceremony 25/IMG_9906.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Convocation Ceremony 25</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Convocation Ceremony 25/IMG_9906.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Convocation Ceremony 25"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-convocation">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Convocation Ceremony 25/IMG_9930.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Convocation Ceremony 25</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Convocation Ceremony 25/IMG_9930.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Convocation Ceremony 25"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-convocation">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Convocation Ceremony 25/IMG_9932.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Convocation Ceremony 25</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Convocation Ceremony 25/IMG_9932.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Convocation Ceremony 25"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-convocation">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Convocation Ceremony 25/IMG_9948.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Convocation Ceremony 25</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Convocation Ceremony 25/IMG_9948.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Convocation Ceremony 25"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-convocation">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Convocation Ceremony 25/IMG_9976.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Convocation Ceremony 25</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Convocation Ceremony 25/IMG_9976.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Convocation Ceremony 25"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-convocation">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Convocation Ceremony 25/IMG_9999.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Convocation Ceremony 25</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Convocation Ceremony 25/IMG_9999.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Convocation Ceremony 25"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Independence Day Images -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-independence">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Independence Day/IMG_0775.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Independence Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Independence Day/IMG_0775.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Independence Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-independence">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Independence Day/IMG_0779.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Independence Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Independence Day/IMG_0779.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Independence Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-independence">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Independence Day/IMG_0790.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Independence Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Independence Day/IMG_0790.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Independence Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-independence">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Independence Day/IMG_0791.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Independence Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Independence Day/IMG_0791.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Independence Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-independence">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Independence Day/IMG_0798.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Independence Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Independence Day/IMG_0798.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Independence Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-independence">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Independence Day/IMG_0826.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Independence Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Independence Day/IMG_0826.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Independence Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-independence">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Independence Day/IMG_0951.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Independence Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Independence Day/IMG_0951.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Independence Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-independence">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Independence Day/IMG_4189.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Independence Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Independence Day/IMG_4189.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Independence Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-independence">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Independence Day/IMG_4243.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Independence Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Independence Day/IMG_4243.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Independence Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-independence">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Independence Day/IMG_4350.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Independence Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Independence Day/IMG_4350.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Independence Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-independence">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Independence Day/IMG_4527.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Independence Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Independence Day/IMG_4527.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Independence Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- International Yoga Day Images -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-yogaday">
+          <div class="portfolio-wrap">
+            <img src="assets/img/International Yoga Day/IMG_0936.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>International Yoga Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/International Yoga Day/IMG_0936.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="International Yoga Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-yogaday">
+          <div class="portfolio-wrap">
+            <img src="assets/img/International Yoga Day/IMG_0952.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>International Yoga Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/International Yoga Day/IMG_0952.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="International Yoga Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-yogaday">
+          <div class="portfolio-wrap">
+            <img src="assets/img/International Yoga Day/IMG_1043.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>International Yoga Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/International Yoga Day/IMG_1043.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="International Yoga Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-yogaday">
+          <div class="portfolio-wrap">
+            <img src="assets/img/International Yoga Day/IMG_1061.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>International Yoga Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/International Yoga Day/IMG_1061.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="International Yoga Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-yogaday">
+          <div class="portfolio-wrap">
+            <img src="assets/img/International Yoga Day/IMG_1075.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>International Yoga Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/International Yoga Day/IMG_1075.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="International Yoga Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-yogaday">
+          <div class="portfolio-wrap">
+            <img src="assets/img/International Yoga Day/IMG_1086.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>International Yoga Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/International Yoga Day/IMG_1086.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="International Yoga Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-yogaday">
+          <div class="portfolio-wrap">
+            <img src="assets/img/International Yoga Day/IMG_1117.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>International Yoga Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/International Yoga Day/IMG_1117.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="International Yoga Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-yogaday">
+          <div class="portfolio-wrap">
+            <img src="assets/img/International Yoga Day/IMG_1166.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>International Yoga Day</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/International Yoga Day/IMG_1166.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="International Yoga Day"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mock Drill 07 May Images -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mockdrill">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Mock Drill 07 May/20250507_084629.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mock Drill 07 May</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Mock Drill 07 May/20250507_084629.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mock Drill 07 May"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mockdrill">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Mock Drill 07 May/IMG_9510.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mock Drill 07 May</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Mock Drill 07 May/IMG_9510.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mock Drill 07 May"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mockdrill">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Mock Drill 07 May/IMG_9511.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mock Drill 07 May</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Mock Drill 07 May/IMG_9511.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mock Drill 07 May"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mockdrill">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Mock Drill 07 May/IMG_9541.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mock Drill 07 May</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Mock Drill 07 May/IMG_9541.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mock Drill 07 May"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mockdrill">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Mock Drill 07 May/IMG_9570.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mock Drill 07 May</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Mock Drill 07 May/IMG_9570.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mock Drill 07 May"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mockdrill">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Mock Drill 07 May/IMG_9582.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mock Drill 07 May</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Mock Drill 07 May/IMG_9582.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mock Drill 07 May"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mockdrill">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Mock Drill 07 May/IMG_9599.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mock Drill 07 May</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Mock Drill 07 May/IMG_9599.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mock Drill 07 May"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mockdrill">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Mock Drill 07 May/IMG_9626.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mock Drill 07 May</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Mock Drill 07 May/IMG_9626.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mock Drill 07 May"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mockdrill">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Mock Drill 07 May/IMG_9631.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mock Drill 07 May</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Mock Drill 07 May/IMG_9631.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mock Drill 07 May"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mockdrill">
+          <div class="portfolio-wrap">
+            <img src="assets/img/Mock Drill 07 May/IMG_9640.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mock Drill 07 May</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/Mock Drill 07 May/IMG_9640.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Mock Drill 07 May"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VC sir Ranking ceremony Images -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-vcceremony">
+          <div class="portfolio-wrap">
+            <img src="assets/img/VC sir Ranking ceremony/1722264284297.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>VC sir Ranking ceremony</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/VC sir Ranking ceremony/1722264284297.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="VC sir Ranking ceremony"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-vcceremony">
+          <div class="portfolio-wrap">
+            <img src="assets/img/VC sir Ranking ceremony/1722264284395.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>VC sir Ranking ceremony</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/VC sir Ranking ceremony/1722264284395.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="VC sir Ranking ceremony"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-vcceremony">
+          <div class="portfolio-wrap">
+            <img src="assets/img/VC sir Ranking ceremony/1722267514085.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>VC sir Ranking ceremony</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/VC sir Ranking ceremony/1722267514085.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="VC sir Ranking ceremony"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-vcceremony">
+          <div class="portfolio-wrap">
+            <img src="assets/img/VC sir Ranking ceremony/1722267514260.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>VC sir Ranking ceremony</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/VC sir Ranking ceremony/1722267514260.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="VC sir Ranking ceremony"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-vcceremony">
+          <div class="portfolio-wrap">
+            <img src="assets/img/VC sir Ranking ceremony/1722267515442.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>VC sir Ranking ceremony</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/VC sir Ranking ceremony/1722267515442.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="VC sir Ranking ceremony"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-vcceremony">
+          <div class="portfolio-wrap">
+            <img src="assets/img/VC sir Ranking ceremony/1722267515514.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>VC sir Ranking ceremony</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/VC sir Ranking ceremony/1722267515514.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="VC sir Ranking ceremony"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-vcceremony">
+          <div class="portfolio-wrap">
+            <img src="assets/img/VC sir Ranking ceremony/1722267515650.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>VC sir Ranking ceremony</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/VC sir Ranking ceremony/1722267515650.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="VC sir Ranking ceremony"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-vcceremony">
+          <div class="portfolio-wrap">
+            <img src="assets/img/VC sir Ranking ceremony/1722269187989.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>VC sir Ranking ceremony</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/VC sir Ranking ceremony/1722269187989.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="VC sir Ranking ceremony"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-vcceremony">
+          <div class="portfolio-wrap">
+            <img src="assets/img/VC sir Ranking ceremony/1722269188085.JPG" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>VC sir Ranking ceremony</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/VC sir Ranking ceremony/1722269188085.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="VC sir Ranking ceremony"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DBATU NCC</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">DBATU NCC Team</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Helper functions for filtering
+    function select(el, all = false) {
+      el = el.trim();
+      if (all) {
+        return [...document.querySelectorAll(el)];
+      } else {
+        return document.querySelector(el);
+      }
+    }
+    function on(type, el, listener, all = false) {
+      let selectEl = select(el, all);
+      if (selectEl) {
+        if (all) {
+          selectEl.forEach(e => e.addEventListener(type, listener));
+        } else {
+          selectEl.addEventListener(type, listener);
+        }
+      }
+    }
+
+    // Initialize GLightbox for portfolio gallery
+    const lightbox = GLightbox({
+      selector: '.portfolio-lightbox',
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true
+    });
+
+    // Portfolio filter functionality
+    window.addEventListener('load', () => {
+      let portfolioContainer = select('.portfolio-container');
+      if (portfolioContainer) {
+        let portfolioIsotope = new Isotope(portfolioContainer, {
+          itemSelector: '.portfolio-item',
+          layoutMode: 'fitRows'
+        });
+
+        let portfolioFilters = select('#portfolio-flters li', true);
+
+        on('click', '#portfolio-flters li', function(e) {
+          e.preventDefault();
+          portfolioFilters.forEach(function(el) {
+            el.classList.remove('filter-active');
+          });
+          this.classList.add('filter-active');
+
+          portfolioIsotope.arrange({
+            filter: this.getAttribute('data-filter')
+          });
+          portfolioIsotope.on('arrangeComplete', function() {
+            AOS.refresh()
+          });
+        }, true);
+      }
+    });
+
+    // Loading screen
+    window.addEventListener('load', function() {
+      var loader = document.getElementById('load');
+      if (loader) {
+        loader.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Events Gallery</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8fafc; margin: 0; padding: 0; }
+        .gallery-container { max-width: 1200px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+        h1 { text-align: center; color: #4469d8; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+        .gallery-item { background: #f3f6fa; border-radius: 8px; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); text-align: center; transition: box-shadow 0.2s; }
+        .gallery-item:hover { box-shadow: 0 4px 16px rgba(68,105,216,0.15); }
+        .gallery-item img { max-width: 100%; max-height: 180px; border-radius: 6px; margin-bottom: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); cursor: pointer; transition: transform 0.2s; }
+        .gallery-item img:hover { transform: scale(1.04); }
+        .caption { font-size: 0.95em; color: #333; word-break: break-all; }
+        /* Lightbox styles */
+        .lightbox {
+            display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100vw; height: 100vh;
+            background: rgba(0,0,0,0.85); align-items: center; justify-content: center;
+        }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-width: 90vw; max-height: 80vh; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.4); }
+        .lightbox-close { position: absolute; top: 30px; right: 40px; font-size: 2.5rem; color: #fff; cursor: pointer; font-weight: bold; }
+        @media (max-width: 600px) { .gallery-container { padding: 5px; } }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>All Events Gallery</h1>
+        <div class="gallery-grid">
+            <!-- CM Visi -->
+            <div class="gallery-item"><img src="assets/img/CM Visi/IMG_6516.JPG" alt="CM Visi 6516"><div class="caption">CM Visi/IMG_6516.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/CM Visi/IMG_6518.JPG" alt="CM Visi 6518"><div class="caption">CM Visi/IMG_6518.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/CM Visi/IMG_6521.JPG" alt="CM Visi 6521"><div class="caption">CM Visi/IMG_6521.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/CM Visi/IMG_6555.JPG" alt="CM Visi 6555"><div class="caption">CM Visi/IMG_6555.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/CM Visi/IMG_6594.JPG" alt="CM Visi 6594"><div class="caption">CM Visi/IMG_6594.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/CM Visi/IMG_6597.JPG" alt="CM Visi 6597"><div class="caption">CM Visi/IMG_6597.JPG</div></div>
+            <!-- Independence Day -->
+            <div class="gallery-item"><img src="assets/img/Independence Day/IMG_0775.JPG" alt="Independence Day 0775"><div class="caption">Independence Day/IMG_0775.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Independence Day/IMG_0779.JPG" alt="Independence Day 0779"><div class="caption">Independence Day/IMG_0779.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Independence Day/IMG_0790.JPG" alt="Independence Day 0790"><div class="caption">Independence Day/IMG_0790.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Independence Day/IMG_0791.JPG" alt="Independence Day 0791"><div class="caption">Independence Day/IMG_0791.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Independence Day/IMG_0798.JPG" alt="Independence Day 0798"><div class="caption">Independence Day/IMG_0798.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Independence Day/IMG_0826.JPG" alt="Independence Day 0826"><div class="caption">Independence Day/IMG_0826.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Independence Day/IMG_0951.JPG" alt="Independence Day 0951"><div class="caption">Independence Day/IMG_0951.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Independence Day/IMG_4189.JPG" alt="Independence Day 4189"><div class="caption">Independence Day/IMG_4189.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Independence Day/IMG_4243.JPG" alt="Independence Day 4243"><div class="caption">Independence Day/IMG_4243.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Independence Day/IMG_4350.JPG" alt="Independence Day 4350"><div class="caption">Independence Day/IMG_4350.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Independence Day/IMG_4527.JPG" alt="Independence Day 4527"><div class="caption">Independence Day/IMG_4527.JPG</div></div>
+            <!-- Convocation Ceremony 25 -->
+            <div class="gallery-item"><img src="assets/img/Convocation Ceremony 25/IMG_9906.JPG" alt="Convocation 9906"><div class="caption">Convocation Ceremony 25/IMG_9906.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Convocation Ceremony 25/IMG_9930.JPG" alt="Convocation 9930"><div class="caption">Convocation Ceremony 25/IMG_9930.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Convocation Ceremony 25/IMG_9932.JPG" alt="Convocation 9932"><div class="caption">Convocation Ceremony 25/IMG_9932.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Convocation Ceremony 25/IMG_9948.JPG" alt="Convocation 9948"><div class="caption">Convocation Ceremony 25/IMG_9948.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Convocation Ceremony 25/IMG_9976.JPG" alt="Convocation 9976"><div class="caption">Convocation Ceremony 25/IMG_9976.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Convocation Ceremony 25/IMG_9999.JPG" alt="Convocation 9999"><div class="caption">Convocation Ceremony 25/IMG_9999.JPG</div></div>
+            <!-- International Yoga Day -->
+            <div class="gallery-item"><img src="assets/img/International Yoga Day/IMG_0936.JPG" alt="Yoga Day 0936"><div class="caption">International Yoga Day/IMG_0936.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/International Yoga Day/IMG_0952.JPG" alt="Yoga Day 0952"><div class="caption">International Yoga Day/IMG_0952.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/International Yoga Day/IMG_1043.JPG" alt="Yoga Day 1043"><div class="caption">International Yoga Day/IMG_1043.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/International Yoga Day/IMG_1061.JPG" alt="Yoga Day 1061"><div class="caption">International Yoga Day/IMG_1061.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/International Yoga Day/IMG_1075.JPG" alt="Yoga Day 1075"><div class="caption">International Yoga Day/IMG_1075.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/International Yoga Day/IMG_1086.JPG" alt="Yoga Day 1086"><div class="caption">International Yoga Day/IMG_1086.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/International Yoga Day/IMG_1117.JPG" alt="Yoga Day 1117"><div class="caption">International Yoga Day/IMG_1117.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/International Yoga Day/IMG_1166.JPG" alt="Yoga Day 1166"><div class="caption">International Yoga Day/IMG_1166.JPG</div></div>
+            <!-- Mock Drill 07 May -->
+            <div class="gallery-item"><img src="assets/img/Mock Drill 07 May/20250507_084629.jpg" alt="Mock Drill 20250507_084629"><div class="caption">Mock Drill 07 May/20250507_084629.jpg</div></div>
+            <div class="gallery-item"><img src="assets/img/Mock Drill 07 May/IMG_9510.JPG" alt="Mock Drill 9510"><div class="caption">Mock Drill 07 May/IMG_9510.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Mock Drill 07 May/IMG_9511.JPG" alt="Mock Drill 9511"><div class="caption">Mock Drill 07 May/IMG_9511.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Mock Drill 07 May/IMG_9541.JPG" alt="Mock Drill 9541"><div class="caption">Mock Drill 07 May/IMG_9541.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Mock Drill 07 May/IMG_9570.JPG" alt="Mock Drill 9570"><div class="caption">Mock Drill 07 May/IMG_9570.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Mock Drill 07 May/IMG_9582.JPG" alt="Mock Drill 9582"><div class="caption">Mock Drill 07 May/IMG_9582.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Mock Drill 07 May/IMG_9599.JPG" alt="Mock Drill 9599"><div class="caption">Mock Drill 07 May/IMG_9599.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Mock Drill 07 May/IMG_9626.JPG" alt="Mock Drill 9626"><div class="caption">Mock Drill 07 May/IMG_9626.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Mock Drill 07 May/IMG_9631.JPG" alt="Mock Drill 9631"><div class="caption">Mock Drill 07 May/IMG_9631.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/Mock Drill 07 May/IMG_9640.JPG" alt="Mock Drill 9640"><div class="caption">Mock Drill 07 May/IMG_9640.JPG</div></div>
+            <!-- VC sir Ranking ceremony -->
+            <div class="gallery-item"><img src="assets/img/VC sir Ranking ceremony/1722264284297.JPG" alt="VC sir 1722264284297"><div class="caption">VC sir Ranking ceremony/1722264284297.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/VC sir Ranking ceremony/1722264284395.JPG" alt="VC sir 1722264284395"><div class="caption">VC sir Ranking ceremony/1722264284395.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/VC sir Ranking ceremony/1722267514085.JPG" alt="VC sir 1722267514085"><div class="caption">VC sir Ranking ceremony/1722267514085.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/VC sir Ranking ceremony/1722267514260.JPG" alt="VC sir 1722267514260"><div class="caption">VC sir Ranking ceremony/1722267514260.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/VC sir Ranking ceremony/1722267515442.JPG" alt="VC sir 1722267515442"><div class="caption">VC sir Ranking ceremony/1722267515442.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/VC sir Ranking ceremony/1722267515514.JPG" alt="VC sir 1722267515514"><div class="caption">VC sir Ranking ceremony/1722267515514.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/VC sir Ranking ceremony/1722267515650.JPG" alt="VC sir 1722267515650"><div class="caption">VC sir Ranking ceremony/1722267515650.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/VC sir Ranking ceremony/1722269187989.JPG" alt="VC sir 1722269187989"><div class="caption">VC sir Ranking ceremony/1722269187989.JPG</div></div>
+            <div class="gallery-item"><img src="assets/img/VC sir Ranking ceremony/1722269188085.JPG" alt="VC sir 1722269188085"><div class="caption">VC sir Ranking ceremony/1722269188085.JPG</div></div>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img id="lightboxImg" src="" alt="Large Preview">
+    </div>
+    <script>
+        // Simple lightbox logic
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxClose = document.getElementById('lightboxClose');
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.classList.add('active');
+            });
+        });
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            lightboxImg.src = '';
+        });
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                lightboxImg.src = '';
+            }
+        });
+    </script>
+</body>
+</html> 

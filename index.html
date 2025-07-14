@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DBATU NCC</title>
+   <meta content="" name="description">
+  <meta content="" name="keywords">
+ <meta content="NCC DBATU - National Cadet Corps, Dr. Babasaheb Ambedkar Technological University" name="description">
+  <meta content="NCC, DBATU, University, Cadet, Maharashtra" name="keywords">
+<style>
+#load{
+  background: #ecf0f1 url(/NCC/assets/giphy.gif) no-repeat center center;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+}
+body { font-family: 'Montserrat', Arial, sans-serif; }
+.navbar { box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.navbar.sticky-top { background: #fff; }
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('assets/img/DSC_0660.JPG') center/cover no-repeat;
+  color: #fff;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.hero-section h1 { font-size: 2.5rem; font-weight: 700; }
+.hero-section p { font-size: 1.2rem; }
+.hero-section .btn-primary { margin-top: 1.5rem; }
+.about-section img { max-width: 100%; border-radius: 10px; }
+.gallery-section img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; transition: transform 0.2s; }
+.gallery-section img:hover { transform: scale(1.05); }
+.counter { font-size: 2rem; font-weight: 700; color: #c00; }
+.back-to-top { position: fixed; right: 20px; bottom: 20px; z-index: 999; display: none; }
+.card { border: none; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); transition: transform 0.2s; }
+.card:hover { transform: translateY(-5px) scale(1.02); }
+.footer { background: #222; color: #fff; padding: 40px 0 20px 0; }
+.footer a { color: #fff; margin: 0 10px; font-size: 1.2rem; }
+.footer a:hover { color: #c00; }
+@media (max-width: 768px) {
+  .hero-section h1 { font-size: 1.5rem; }
+  .hero-section { min-height: 40vh; }
+  .gallery-section img { height: 120px; }
+}
+/* Join NCC Section Alignment Fix */
+#join-ncc .section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#join-ncc .php-email-form {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+  padding: 32px 24px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+#join-ncc .row.justify-content-center {
+  margin: 0;
+}
+#join-ncc .form-group label {
+  font-weight: 600;
+  color: #4469d8;
+}
+#join-ncc .form-control {
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1.05rem;
+}
+#join-ncc .btn-primary {
+  background: linear-gradient(135deg, #4469d8 0%, #00b894 100%);
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(68, 105, 216, 0.3);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  #join-ncc .php-email-form {
+    padding: 18px 8px;
+    max-width: 100%;
+  }
+}
+</style>
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://unpkg.com/tailwindcss@1.0/dist/tailwind.min.css" rel="stylesheet"> 
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700iRaleway:300,300i,400,400i,500,500i,600,600i,700,700iPoppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="portfolio-details.html " rel="stylesheet" >
+
+</head>
+
+<body>
+  <div id="load"></div>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+    
+      
+    </div>
+  </section>
+
+  <div class="color">
+    <div class="header">
+      <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between flex-wrap" style="gap: 16px;">
+          <a href="https://indiancc.nic.in/" class="d-block" style="flex:0 0 110px;">
+            <img src="assets/img/logo.png" alt="NCC Logo" style="height:90px; width:auto; border-radius:14px; box-shadow:0 2px 8px #2222; background:#fff; padding:4px;">
+          </a>
+          <div class="flex-grow-1 text-center">
+            <div style="font-size:2.1rem; font-weight:800; color:#fff; letter-spacing:1px; line-height:1.1;">Dr. Babasaheb Ambedkar Technological University, Lonere</div>
+            <div style="font-size:1.3rem; color:#ffe066; font-weight:600; margin-top:2px;">डॉ. बाबासाहेब आंबेडकर तंत्रशास्त्र विद्यापीठ, लोणेरे</div>
+            <div style="font-size:1.05rem; color:#e0e0e0; margin-top:2px;">Tal.: Mangoan, Dist.: Raigad, Maharashtra, India - 402103</div>
+            <div style="font-size:2.2rem; color:#fff; font-weight:900; margin-top:10px; letter-spacing:1.5px; text-shadow:0 2px 8px #2222;">DBATU NCC UNIT</div>
+            <div style="font-size:1.25rem; color:#ffe066; font-weight:700;">6 MAH BN MUMBAI GRP 'A'</div>
+          </div>
+          <a href="https://dbatu.ac.in/" class="d-block" style="flex:0 0 110px;">
+            <img src="assets/img/BATU_logo.png" alt="DBATU Logo" style="height:90px; width:auto; border-radius:14px; box-shadow:0 2px 8px #2222; background:#fff; padding:4px;">
+          </a>
+        </div>
+      </div>
+      <hr style="border:0; border-top:2.5px solid #fff; opacity:0.25; margin:18px 0 0 0;">
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+
+      <nav id="navbar" class="navbar justify-content-center w-100" style="display: flex; justify-content: center;">
+        <ul style="margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+          <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
+          <li class="dropdown"><a href="#"><span>ABOUT</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                
+                  <li><a href="https://indiancc.nic.in/aim-of-ncc/" target="_blank">AIM</a></li>
+                  <li><a href="https://indiancc.nic.in/motto-of-ncc/" target="_blank">MOTTO</a></li>
+                  <li><a href="https://indiancc.nic.in/pledge/" target="_blank">PLEDGE</a></li>
+                  <li><a href="https://indiancc.nic.in/ncc-song-lyrics/" target="_blank">NCC SONG</a></li>
+                  <li><a href="https://indiancc.nic.in/document-category/ncc-act/" target="_blank">NCC ACT</a></li>
+                  <li><a href="https://indiancc.nic.in/document-category/ncc-rules/" target="_blank">NCC RULES</a></li>
+                 </ul>
+          
+          </li>
+          <li class="dropdown"><a href=""><span>CADET</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                
+                  <li><a href="https://indiancc.nic.in/cadets-commandments/" target="_blank">Cadet's Commandments</a></li>
+                  <li><a href="https://indiancc.nic.in/training-activities/" target="_blank">Training Syllabus </a></li>
+                  <li><a href="assets/document/handbook.pdf" target="_blank">Cadets' Handbook</a></li>
+                  <li><a href="https://nccauto.gov.in/enrolment" target="_blank">Cadet Enrollment form SD/SW</a></li>
+                  <li><a href="https://indiancc.nic.in/document-category/ncc-rules/" target="_blank">Cadet Schlorship</a></li>
+                  <li><a href="https://joinindianarmy.nic.in/writereaddata/Portal/NotificationPDF/NCC_50.pdf" target="_blank">Special Entry Scheme Arm</a></li>
+                  
+                </ul>
+          
+          <li><a class="nav-link scrollto" href="#about">ANO</a></li>
+          
+         
+          <li><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
+          <li><a class="nav-link scrollto" href="https://nccauto.gov.in/alumni">ALUMNI</a></li>
+          <li class="dropdown">
+              <a href="#"><span>APPLICATIONS</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                  <li><a href="track-application.php">Track Your Application</a></li>
+                  <li><a href="applications.php">View All Applications</a></li>
+              </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="Portfolio-details.html">GALLERY</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero-section" style="background: url('assets/img/themenail.jpg') center/cover no-repeat; min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative;">
+    <!-- Static hero section, no carousel, no text overlay -->
+  </section>
+
+  <div class="scroller-container">
+    <div class="scroller">
+      <span class="text"><b>Attension:</b>  1 May Maharashtra Din Next Event.</span>
+    </div>
+  </div>
+  
+  <script>// Resize the scroller when the window is resized
+    window.addEventListener('resize', function() {
+      var scroller = document.querySelector('.scroller');
+      var container = document.querySelector('.scroller-container');
+      scroller.style.animationDuration = (scroller.offsetWidth / container.offsetWidth) * 12+ 's';
+    });
+    </script>
+
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container py-5">
+        <div class="section-title text-center">
+          <h2 style="font-size:2.7rem; color:#4469d8; font-weight:800; letter-spacing:1px;">ABOUT NCC</h2>
+          <p style="font-size:1.3rem; color:#222; font-weight:500;">Unity and Discipline. Leadership and Service. <span style='color:#00b894;'>NCC shapes the youth of India.</span></p>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="card shadow p-4 mb-4" style="border-radius:18px; border:none; background:#fff;">
+              <h3 class="mb-3" style="color:#4469d8; font-weight:700;">What is NCC?</h3>
+              <p style="font-size:1.1rem;">The <b>National Cadet Corps (NCC)</b> is India's premier youth organization, dedicated to building character, discipline, leadership, and a spirit of adventure among students. Open to school and college students, NCC is a Tri-Services Organization—Army, Navy, and Air Force—committed to developing responsible, patriotic citizens.</p>
+              <h4 class="mt-4" style="color:#00b894; font-weight:600;"><i class="bi bi-bullseye"></i> Aims of NCC</h4>
+              <ul style="font-size:1.05rem; margin-left:1rem;">
+                <li>Develop qualities of character, comradeship, discipline, and leadership.</li>
+                <li>Promote a spirit of adventure and selfless service.</li>
+                <li>Motivate youth to serve the nation in all walks of life.</li>
+                <li>Provide an environment to inspire joining the Armed Forces.</li>
+              </ul>
+              <h4 class="mt-4" style="color:#00b894; font-weight:600;"><i class="bi bi-lightbulb"></i> Objectives</h4>
+              <ul style="font-size:1.05rem; margin-left:1rem;">
+                <li>Train youth to become confident, committed, and competent leaders.</li>
+                <li>Enhance awareness and responsibility as citizens.</li>
+                <li>Encourage knowledge, communication skills, and character building.</li>
+                <li>Conduct social and community development activities.</li>
+                <li>Promote adventure and risk-taking abilities.</li>
+                <li>Provide military training and leadership skills.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center">
+            <div class="ncc-officer-img-wrapper" style="position:relative; display:inline-block; max-width:90%;">
+              <img src="assets/img/Milind_sir.jpg" class="img-fluid animate__animated animate__zoomIn ncc-officer-img" alt="NCC Officer" style="border-radius: 18px; box-shadow: 0 8px 32px rgba(44,62,80,0.18); border: 4px solid #fffbe6; transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s;">
+              <div class="ncc-officer-caption" style="position:absolute; left:0; right:0; bottom:0; background:rgba(68,105,216,0.85); color:#fff; border-radius:0 0 14px 14px; padding:10px 0 6px 0; font-size:1.08rem; font-weight:600; letter-spacing:0.5px;">
+                Maj. (Dr.) Milind Bhagat<br><span style="font-size:0.97rem; color:#ffe066; font-weight:400;">Associate NCC Officer, DBATU</span>
+              </div>
+            </div>
+            <style>
+              .ncc-officer-img-wrapper {
+                box-shadow: 0 8px 32px rgba(44,62,80,0.18), 0 0 0 6px #ffe06644;
+                background: linear-gradient(120deg, #fffbe6 0%, #ffe066 100%);
+                border-radius: 22px;
+                padding: 6px;
+                transition: box-shadow 0.4s, transform 0.4s;
+              }
+              .ncc-officer-img-wrapper:hover {
+                box-shadow: 0 16px 48px 0 #ffe06699, 0 8px 32px rgba(44,62,80,0.18);
+                transform: translateY(-8px) scale(1.035);
+              }
+              .ncc-officer-img-wrapper .ncc-officer-img {
+                transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s;
+              }
+              .ncc-officer-img-wrapper:hover .ncc-officer-img {
+                transform: scale(1.055);
+                box-shadow: 0 16px 48px 0 #ffe06699, 0 8px 32px rgba(44,62,80,0.18);
+                border-color: #fffbe6;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Camps ======= -->
+    <!-- Remove the 'Camps' section (id='why-us') from the page -->
+
+
+     <!-- ======= Gallery Section ======= -->
+     <section id="clients" class="clients section-bg">
+      <div class="container py-5">
+        <div class="section-title text-center">
+          <h2 style="font-size:2.4rem; color:#4469d8; font-weight:800; letter-spacing:1px;">Gallery</h2>
+          <p style="font-size:1.15rem; color:#222; font-weight:500;">Memorable Moments &amp; Proud Achievements</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-3 col-sm-6">
+            <div class="gallery-card glass-card position-relative overflow-hidden rounded-3 shadow-sm">
+              <a href="assets\img\CM Visi\IMG_6521.JPG"class="glightbox" data-gallery="ncc-gallery">
+                <img src="assets\img\CM Visi\IMG_6521.JPG"class="img-fluid w-100 gallery-img" alt="NCC Event 1" style="height:200px; object-fit:cover; transition:transform 0.3s;">
+                <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                  <i class="bi bi-zoom-in" style="font-size:2rem; color:#fff;"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="gallery-card glass-card position-relative overflow-hidden rounded-3 shadow-sm">
+              <a href="assets/img/1660559402455.JPG" class="glightbox" data-gallery="ncc-gallery">
+                <img src="assets/img/1660559402455.JPG" class="img-fluid w-100 gallery-img" alt="NCC Event 2" style="height:200px; object-fit:cover; transition:transform 0.3s;">
+                <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                  <i class="bi bi-zoom-in" style="font-size:2rem; color:#fff;"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="gallery-card glass-card position-relative overflow-hidden rounded-3 shadow-sm">
+              <a href="assets/img/DSC_0129.jpg" class="glightbox" data-gallery="ncc-gallery">
+                <img src="assets/img/DSC_0129.jpg" class="img-fluid w-100 gallery-img" alt="NCC Event 3" style="height:200px; object-fit:cover; transition:transform 0.3s;">
+                <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                  <i class="bi bi-zoom-in" style="font-size:2rem; color:#fff;"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="gallery-card glass-card position-relative overflow-hidden rounded-3 shadow-sm">
+              <a href="assets/img/DSC_0661.JPG" class="glightbox" data-gallery="ncc-gallery">
+                <img src="assets/img/DSC_0661.JPG" class="img-fluid w-100 gallery-img" alt="NCC Event 4" style="height:200px; object-fit:cover; transition:transform 0.3s;">
+                <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                  <i class="bi bi-zoom-in" style="font-size:2rem; color:#fff;"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <style>
+          .gallery-card { cursor:pointer; background:#fff; }
+          .gallery-card .gallery-img { transition: transform 0.3s, box-shadow 0.3s; }
+          .gallery-card:hover .gallery-img { transform: scale(1.07); box-shadow: 0 8px 32px #00b89433; }
+          .gallery-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(68,105,216,0.45);
+            opacity: 0; transition: opacity 0.3s;
+          }
+          .gallery-card:hover .gallery-overlay { opacity: 1; }
+          
+          /* Active Submit Button Styles */
+          .btn-primary[type="submit"] {
+            position: relative;
+            overflow: hidden;
+            transform: translateY(0);
+          }
+          
+          .btn-primary[type="submit"]:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(68, 105, 216, 0.4), 0 4px 15px rgba(0, 184, 148, 0.3);
+            background: linear-gradient(135deg, #00b894 0%, #4469d8 100%);
+          }
+          
+          .btn-primary[type="submit"]:active {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(68, 105, 216, 0.3);
+          }
+          
+          .btn-primary[type="submit"]::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+          }
+          
+          .btn-primary[type="submit"]:hover::before {
+            left: 100%;
+          }
+          
+          .btn-primary[type="submit"]:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(68, 105, 216, 0.3), 0 4px 15px rgba(68, 105, 216, 0.3);
+          }
+        </style>
+        <script>
+          if (typeof GLightbox !== 'undefined') { GLightbox({ selector: '.glightbox' }); }
+        </script>
+      </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-12 d-flex align-items-stretch">
+            <div class="info w-100">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Dr. Babasaheb Ambedkar Technoloical University,
+                  Lonere, Tal.: Mangaon, Dist.: Raigad, Maharashtra (India) - 402103</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@dbatu.ac.in</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>02140 275081 / 212</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3790.8717698022506!2d73.3363443148079!3d18.169820087614195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be82e9b091399f5%3A0x2fac4343fa1e3cae!2sDr.%20Babasaheb%20Ambedkar%20Technological%20University!5e0!3m2!1sen!2sin!4v1680084344790!5m2!1sen!2sin" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  <!-- ======= Join NCC Section ======= -->
+  <section id="join-ncc" class="contact section-bg">
+    <div class="container-fluid px-0" style="max-width:100vw;">
+      <div class="section-title text-center mx-auto" style="max-width:600px;">
+        <h2>Join NCC</h2>
+        <p>Interested in joining NCC? Fill out the form below to express your interest and get started on your journey!</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 mt-5 mt-lg-0 d-flex align-items-stretch mx-auto">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form mx-auto">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="join-name">Full Name</label>
+                <input type="text" name="name" class="form-control" id="join-name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="join-email">Email Address</label>
+                <input type="email" class="form-control" name="email" id="join-email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-6 mt-3">
+                <label for="join-phone">Phone Number</label>
+                <input type="tel" class="form-control" name="phone" id="join-phone" required>
+              </div>
+              <div class="form-group col-md-6 mt-3">
+                <label for="join-branch">Branch/Department</label>
+                <select class="form-control" name="branch" id="join-branch" required>
+                  <option value="">Select your branch...</option>
+                  <option value="Computer Engineering">Computer Engineering</option>
+                  <option value="Mechanical Engineering">Mechanical Engineering</option>
+                  <option value="Electrical Engineering">Electrical Engineering</option>
+                  <option value="Civil Engineering">Civil Engineering</option>
+                  <option value="Chemical Engineering">Chemical Engineering</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-6 mt-3">
+                <label for="join-year">Current Year</label>
+                <select class="form-control" name="year" id="join-year" required>
+                  <option value="">Select year...</option>
+                  <option value="First Year">First Year</option>
+                  <option value="Second Year">Second Year</option>
+                  <option value="Third Year">Third Year</option>
+                  <option value="Fourth Year">Fourth Year</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6 mt-3">
+                <label for="join-gender">Gender</label>
+                <select class="form-control" name="gender" id="join-gender" required>
+                  <option value="">Select gender...</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your application has been submitted successfully! We'll get back to you soon.</div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg px-5 py-3 animate__animated btn-3d" id="cta-btn" style="background: linear-gradient(135deg, #4469d8 0%, #00b894 100%); border: none; border-radius: 50px; font-weight: 600; font-size: 1.1rem; letter-spacing: 0.5px; box-shadow: 0 4px 15px rgba(68, 105, 216, 0.3); transition: all 0.3s ease; text-transform: uppercase;">
+                <i class="bi bi-send-fill me-2"></i>Submit Application
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>DBATU NCC UNIT</h3>
+      <p>DBATU NCC UNIT, one of the courageous parts of Dr. Babasaheb Ambedkar Technological University, had performed many social and cultural activities throughout the years. Presently the cadets of our unit are performing best in all of the events they are a part of. Here is the list of the activities cadets performed and participated in throughout the years under the supervision of Associate NCC Officer Maj. (Dr.) Milind Bhagat.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/dbatu_ncc_unit?igshid=YmMyMTA2M2Y=" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <!-- Copyright and credits removed as requested -->
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    var loader = document.getElementById("load");
+    window.addEventListener("load", function () {
+        loader.style.display = "none"
+    })
+    // Animate button on hover
+    document.getElementById('cta-btn').addEventListener('mouseenter', function() {
+      this.classList.add('animate__pulse');
+    });
+    document.getElementById('cta-btn').addEventListener('mouseleave', function() {
+      this.classList.remove('animate__pulse');
+    });
+    // Animate footer social icons on hover
+    document.querySelectorAll('.social-links a').forEach(function(el) {
+      el.addEventListener('mouseenter', function() {
+        el.classList.add('animate__tada');
+      });
+      el.addEventListener('mouseleave', function() {
+        el.classList.remove('animate__tada');
+      });
+    });
+    // Parallax effect for hero section
+    const hero = document.querySelector('.hero-parallax');
+    hero.addEventListener('mousemove', function(e) {
+      const content = hero.querySelector('.hero-content.active') || hero.querySelector('.hero-content');
+      if (!content) return;
+      const rect = hero.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateY = (x - centerX) / centerX * 10;
+      const rotateX = (centerY - y) / centerY * 10;
+      content.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+    });
+    hero.addEventListener('mouseleave', function() {
+      hero.querySelectorAll('.hero-content').forEach(function(content) {
+        content.style.transform = '';
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+<!-- finally done -->
