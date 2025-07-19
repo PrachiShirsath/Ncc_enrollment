@@ -1,27 +1,20 @@
 -- NCC DBATU Database Setup
 -- Create database
-CREATE DATABASE IF NOT EXISTS ncc_dbatu;
-USE ncc_dbatu;
+CREATE DATABASE IF NOT EXISTS ncc_dbatu1;
+USE ncc_dbatu1;
 
 -- NCC Applications table
+DROP TABLE IF EXISTS ncc_applications;
 CREATE TABLE ncc_applications (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    registration_id VARCHAR(20) UNIQUE NOT NULL,
-    full_name VARCHAR(100) NOT NULL,
+    registration_id VARCHAR(50) UNIQUE,
+    name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
-    phone VARCHAR(15) NOT NULL,
-    branch VARCHAR(50) NOT NULL,
-    current_year VARCHAR(20) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    year VARCHAR(10) NOT NULL,
+    branch VARCHAR(20) NOT NULL,
     gender VARCHAR(10) NOT NULL,
-    motivation TEXT NOT NULL,
-    status ENUM('pending', 'approved', 'rejected', 'assigned') DEFAULT 'pending',
-    batch_id INT NULL,
-    assigned_date DATE NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    INDEX idx_registration_id (registration_id),
-    INDEX idx_status (status),
-    INDEX idx_email (email)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- NCC Batches table

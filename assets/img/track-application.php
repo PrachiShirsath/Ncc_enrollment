@@ -159,7 +159,7 @@
                     <?php
                     // Database connection
                     $host = 'localhost';
-                    $dbname = 'ncc_dbatu';
+                    $dbname = 'ncc_dbatu1';
                     $username = 'root';
                     $password = '';
 

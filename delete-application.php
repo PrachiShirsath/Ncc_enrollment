@@ -1,7 +1,13 @@
 <?php
+session_start();
+$is_admin = (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true);
+if (!$is_admin) {
+    header('Location: applications.php');
+    exit();
+}
 // delete-application.php
 $host = 'localhost';
-$dbname = 'ncc_dbatu';
+$dbname = 'ncc_dbatu1';
 $username = 'root';
 $password = '';
 

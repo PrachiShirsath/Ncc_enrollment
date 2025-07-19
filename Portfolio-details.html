@@ -37,93 +37,42 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="index.html" rel="index">
+  <style>
+    body {
+      background: linear-gradient(90deg, #e0f7fa 0%, #b2ebf2 50%, #c8e6c9 100%);
+      font-family: 'Montserrat', Arial, sans-serif;
+      min-height: 100vh;
+    }
+  </style>
 
 </head>
 
 <body>
   <div id="load"></div>
 
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-    
-      
-    </div>
-  </section>
-
-  <div class="color">
-    <div class="header" style="background: #111; color: #fff; border-radius: 0 0 24px 24px; box-shadow: 0 4px 24px rgba(44,62,80,0.10); padding: 24px 0 18px 0; margin-bottom: 0;">
-      <div class="container-fluid px-4">
-        <div class="d-flex align-items-center justify-content-between flex-wrap" style="gap: 16px;">
-          <a href="https://dbatu.ac.in/" class="d-block" style="flex:0 0 110px;">
-            <img src="assets/img/BATU_logo.png" alt="DBATU Logo" style="height:90px; width:auto; border-radius:14px; box-shadow:0 2px 8px #2222; background:#fff; padding:4px;">
-          </a>
-          <div class="flex-grow-1 text-center">
-            <div style="font-size:2.1rem; font-weight:800; color:#fff; letter-spacing:1px; line-height:1.1;">Dr. Babasaheb Ambedkar Technological University, Lonere</div>
-            <div style="font-size:1.3rem; color:#ffe066; font-weight:600; margin-top:2px;">डॉ. बाबासाहेब आंबेडकर तंत्रशास्त्र विद्यापीठ, लोणेरे</div>
-            <div style="font-size:1.05rem; color:#e0e0e0; margin-top:2px;">Tal.: Mangoan, Dist.: Raigad, Maharashtra, India - 402103</div>
-            <div style="font-size:2.2rem; color:#fff; font-weight:900; margin-top:10px; letter-spacing:1.5px; text-shadow:0 2px 8px #2222;">DBATU NCC UNIT</div>
-            <div style="font-size:1.25rem; color:#ffe066; font-weight:700;">6 MAH BN MUMBAI GRP 'A'</div>
-          </div>
-          <a href="https://indiancc.nic.in/" class="d-block" style="flex:0 0 110px;">
-            <img src="assets/img/logo.png" alt="NCC Logo" style="height:90px; width:auto; border-radius:14px; box-shadow:0 2px 8px #2222; background:#fff; padding:4px;">
-          </a>
-        </div>
-      </div>
-      <hr style="border:0; border-top:2.5px solid #fff; opacity:0.25; margin:18px 0 0 0;">
-    </div>
-  </div>
-
-  <!-- ======= Header ======= -->
+  <!-- ======= Header/Navbar ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center">
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="index.html">HOME</a></li>
-          <li class="dropdown"><a href="#"><span>ABOUT</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-                
-                  <li><a href="https://indiancc.nic.in/aim-of-ncc/" target="_blank">AIM</a></li>
-                  <li><a href="https://indiancc.nic.in/motto-of-ncc/" target="_blank">MOTTO</a></li>
-                  <li><a href="https://indiancc.nic.in/pledge/" target="_blank">PLEDGE</a></li>
-                  <li><a href="https://indiancc.nic.in/ncc-song-lyrics/" target="_blank">NCC SONG</a></li>
-                  <li><a href="https://indiancc.nic.in/document-category/ncc-act/" target="_blank">NCC ACT</a></li>
-                  <li><a href="https://indiancc.nic.in/document-category/ncc-rules/" target="_blank">NCC RULES</a></li>
-                 </ul>
-            
-          </li>
-          <li class="dropdown"><a href=""><span>CADET</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-                
-                  <li><a href="https://indiancc.nic.in/cadets-commandments/" target="_blank">Cadet's Commandments</a></li>
-                  <li><a href="https://indiancc.nic.in/training-activities/" target="_blank">Training Syllabus </a></li>
-                  <li><a href="assets/document/handbook.pdf" target="_blank">Cadets' Handbook</a></li>
-                  <li><a href="https://nccauto.gov.in/enrolment" target="_blank">Cadet Enrollment form SD/SW</a></li>
-                  <li><a href="https://indiancc.nic.in/document-category/ncc-rules/" target="_blank">Cadet Schlorship</a></li>
-                  <li><a href="https://joinindianarmy.nic.in/writereaddata/Portal/NotificationPDF/NCC_50.pdf" target="_blank">Special Entry Scheme Arm</a></li>
-                  
-                </ul>
-          
-          <li><a class="nav-link scrollto" href="#about">ANO</a></li>
-          
-         
-          <li><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
+      <nav id="navbar" class="navbar justify-content-center w-100" style="display: flex; justify-content: center;">
+        <ul class="d-flex justify-content-center align-items-center gap-3" style="margin: 0 auto;">
+          <li><a class="nav-link scrollto" href="index.html#hero">HOME</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">ABOUT</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">CONTACT</a></li>
           <li><a class="nav-link scrollto" href="https://nccauto.gov.in/alumni">ALUMNI</a></li>
           <li class="dropdown">
-              <a href="#"><span>APPLICATIONS</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                  <li><a href="track-application.php">Track Your Application</a></li>
-                  <li><a href="applications.php">View All Applications</a></li>
-              </ul>
+            <a href="#"><span>APPLICATIONS</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="track-application.php" target="_blank">Track Your Application</a></li>
+              <li><a href="applications.php" target="_blank">View All Applications</a></li>
+            </ul>
           </li>
-          <li><a class="getstarted scrollto active" href="Portfolio-details.html">GALLERY</a></li>
+          <li><a class="nav-link scrollto active" href="Portfolio-details.html">GALLERY</a></li>
+          <li><a class="nav-link scrollto" href="join-ncc.php">JOIN NCC</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
   
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">

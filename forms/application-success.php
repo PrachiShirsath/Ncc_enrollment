@@ -1,22 +1,22 @@
 <?php
-ini_set('display_errors', 0);
-error_reporting(0);
+// ini_set('display_errors', 0);
+// error_reporting(0);
 // Start the session to access session variables
 session_start();
 
-// Check if the registration ID is set in the session. If not, redirect to homepage.
-if (!isset($_SESSION['new_registration_id']) || !isset($_SESSION['applicant_name'])) {
+// Support both session and GET parameter for registration ID and applicant name
+if (isset($_SESSION['new_registration_id']) && isset($_SESSION['applicant_name'])) {
+    $registration_id = $_SESSION['new_registration_id'];
+    $applicant_name = $_SESSION['applicant_name'];
+    unset($_SESSION['new_registration_id']);
+    unset($_SESSION['applicant_name']);
+} elseif (isset($_GET['id']) && !empty($_GET['id'])) {
+    $registration_id = $_GET['id'];
+    $applicant_name = 'Applicant'; // fallback if name is not available
+} else {
     header("Location: ../index.html");
     exit();
 }
-
-// Get the details from the session
-$registration_id = $_SESSION['new_registration_id'];
-$applicant_name = $_SESSION['applicant_name'];
-
-// Unset the session variables so they can't be reused
-unset($_SESSION['new_registration_id']);
-unset($_SESSION['applicant_name']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -98,71 +98,60 @@ unset($_SESSION['applicant_name']);
             border-radius: 10px;
             margin-top: 20px;
         }
+        .modal-dialog {
+            max-width: 620px !important; /* 600px + 20px */
+        }
+        .modal-content {
+            padding: 20px 20px 0 20px;
+        }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <div class="color">
-        <div class="header" style="background: #111; color: #fff; border-radius: 0 0 24px 24px; box-shadow: 0 4px 24px rgba(44,62,80,0.10); padding: 24px 0 18px 0; margin-bottom: 0;">
-            <div class="container-fluid px-4">
-                <div class="d-flex align-items-center justify-content-between flex-wrap" style="gap: 16px;">
-                    <!-- Removed DBATU and NCC logo images from header -->
-                    <div class="flex-grow-1 text-center">
-                        <div style="font-size:2.1rem; font-weight:800; color:#fff; letter-spacing:1px; line-height:1.1;">Application Submitted Successfully</div>
-                        <div style="font-size:1.3rem; color:#ffe066; font-weight:600; margin-top:2px;">DBATU NCC UNIT</div>
-                        <div style="font-size:1.05rem; color:#e0e0e0; margin-top:2px;">Dr. Babasaheb Ambedkar Technological University</div>
+        <div class="container">
+            <!-- Modal Popup for Success Message -->
+            <div class="modal fade show" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-modal="true" role="dialog" style="display:block; background:rgba(0,0,0,0.4);">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-success text-white">
+                            <h5 class="modal-title w-100 text-center" id="successModalLabel"><i class="bi bi-check-circle me-2"></i>Application Submitted Successfully!</h5>
+                        </div>
+                        <div class="modal-body text-center">
+                            <h2 style="color: #4469d8; font-weight: 700; margin-bottom: 1rem;">Thank You, <?php echo htmlspecialchars($applicant_name); ?>!</h2>
+                            <p style="font-size: 1.1rem; color: #495057;">Your application to join the DBATU NCC unit has been received successfully.</p>
+                            <p style="font-size: 1.05rem; color: #6c757d;">Please save your Registration ID. You will need it to track the status of your application.</p>
+                            <div class="reg-id-box my-3" id="regId">
+                                <?php echo htmlspecialchars($registration_id); ?>
+                            </div>
+                            <div class="footer-note mt-3">
+                                <i class="bi bi-info-circle me-2"></i>
+                                A confirmation has been notionally sent to your email (as this is a project). You will be notified about the next steps of the selection process.
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="../track-application.php" target="_blank" class="btn btn-primary me-3">
+                                <i class="bi bi-search me-2"></i>Track Application
+                            </a>
+                            <a href="../index.html" class="btn btn-outline-primary">
+                                <i class="bi bi-house me-2"></i>Back to Home
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var modal = document.getElementById('successModal');
+                    if (modal) {
+                        modal.classList.add('show');
+                        modal.style.display = 'block';
+                    }
+                });
+            </script>
         </div>
-    </div>
-
-    <div class="success-container">
-        <div class="container">
-            <div class="success-card">
-                <!-- Success Alert -->
-                 <div class="alert alert-success text-center" role="alert" style="font-size:1.15rem; font-weight:600; margin-bottom: 1.5rem;">
-                    <i class="bi bi-check-circle me-2"></i>
-                    Application Submitted Successfully!
-                </div>
-                
-                <h2 style="color: #4469d8; font-weight: 700; margin-bottom: 1rem;">Thank You, <?php echo htmlspecialchars($applicant_name); ?>!</h2>
-                
-                <p class="text-center mb-3" style="font-size: 1.1rem; color: #495057;">
-                    Your application to join the DBATU NCC unit has been received successfully.
-                </p>
-                
-                <p class="text-center mb-4" style="font-size: 1.05rem; color: #6c757d;">
-                    Please save your Registration ID. You will need it to track the status of your application.
-                </p>
-                
-                <div class="reg-id-box" id="regId">
-                    <?php echo htmlspecialchars($registration_id); ?>
-                </div>
-                
-                <div class="footer-note">
-                    <i class="bi bi-info-circle me-2"></i>
-                    A confirmation has been notionally sent to your email (as this is a project). You will be notified about the next steps of the selection process.
-                </div>
-                
-                <div class="mt-4">
-                    <a href="track-application.php" class="btn btn-primary me-3">
-                        <i class="bi bi-search me-2"></i>Track Application
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p>&copy; 2024-2025 DBATU NCC UNIT. All Rights Reserved</p>
-            <p class="mb-0">Made by Sudharshan and Prachi</p>
-        </div>
-    </footer>
 
     <!-- Bootstrap JS -->
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html> 
+
+

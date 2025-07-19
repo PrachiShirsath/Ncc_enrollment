@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Events Gallery</title>
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; background: #f8fafc; margin: 0; padding: 0; }
+        body {
+            background: linear-gradient(90deg, #e0f7fa 0%, #b2ebf2 50%, #c8e6c9 100%);
+            font-family: 'Montserrat', Arial, sans-serif;
+            min-height: 100vh;
+        }
+        .gallery-card {
+            background: #fff;
+            border-radius: 28px;
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.13);
+            padding: 36px 32px;
+            max-width: 900px;
+            width: 100%;
+            margin: 40px auto;
+        }
         .gallery-container { max-width: 1200px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
         h1 { text-align: center; color: #4469d8; }
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
@@ -26,7 +42,30 @@
     </style>
 </head>
 <body>
-    <div class="gallery-container">
+  <!-- ======= Header/Navbar ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <nav id="navbar" class="navbar justify-content-center w-100" style="display: flex; justify-content: center;">
+        <ul class="d-flex justify-content-center align-items-center gap-3" style="margin: 0 auto;">
+          <li><a class="nav-link scrollto" href="index.html#hero">HOME</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">ABOUT</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">CONTACT</a></li>
+          <li><a class="nav-link scrollto" href="https://nccauto.gov.in/alumni">ALUMNI</a></li>
+          <li class="dropdown">
+            <a href="#"><span>APPLICATIONS</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="track-application.php" target="_blank">Track Your Application</a></li>
+              <li><a href="applications.php" target="_blank">View All Applications</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto active" href="test-gallery.html">GALLERY</a></li>
+          <li><a class="nav-link scrollto" href="join-ncc.php">JOIN NCC</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+    <div class="gallery-card">
         <h1>All Events Gallery</h1>
         <div class="gallery-grid">
             <!-- CM Visi -->
