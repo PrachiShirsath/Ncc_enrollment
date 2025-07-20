@@ -48,13 +48,13 @@
               </div>
               <div class="form-group col-md-6">
                 <label for="join-email">Email Address</label>
-                <input type="email" class="form-control" name="email" id="join-email" required pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" >
+                <input type="email" class="form-control" name="email" id="join-email" required>
               </div>
             </div>
             <div class="row">
               <div class="form-group col-md-6 mt-3">
                 <label for="join-phone">Phone Number</label>
-                <input type="tel" class="form-control" name="phone" id="join-phone" required pattern="\d{10}" title="Phone number must be exactly 10 digits">
+                <input type="tel" class="form-control" name="phone" id="join-phone" required>
               </div>
               <div class="form-group col-md-6 mt-3">
                 <label for="join-branch">Branch/Department</label>
@@ -109,15 +109,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('.php-email-form');
   if (form) {
     form.addEventListener('submit', function(e) {
-      const emailInput = document.getElementById('join-email');
-      const email = emailInput.value.trim();
-      const gmailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-      if (!gmailPattern.test(email)) {
-        e.preventDefault();
-        alert('Please enter a valid email in the format username@gmail.com');
-        emailInput.focus();
-        return false;
-      }
       const phoneInput = document.getElementById('join-phone');
       const phone = phoneInput.value.trim();
       const phonePattern = /^\d{10}$/;
