@@ -75,7 +75,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <button type="submit" class="btn btn-primary w-100">Login</button>
         <div class="text-center mt-3">
-            <span class="text-muted">Login with <b>admin@dbatu.edu</b> / <b>admin123</b></span>
         </div>
     </form>
 </div>
